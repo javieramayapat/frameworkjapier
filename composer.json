@@ -1,0 +1,20 @@
+{
+    "name": "amaya/framework-japier",
+    "description": "Creaci\u0000n de mi propio frameworke basado el Laravel para poder comprender el cliclo de petici\u0000n, Procesamiento y respuesta de un cliente.",
+    "authors": [
+        {
+            "name": "Javier Amaya Patricio",
+            "email": "javieramayapat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" :{
+        "psr-4": {
+            "App\\" : "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
