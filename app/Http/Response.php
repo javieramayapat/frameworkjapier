@@ -28,10 +28,10 @@ class Response
         $view = $this->getView();
 
         // Obtener el contendio que se pintara a en la vista.
-        $content = file_get_contents(__DIR__ . "../../views/$view.php");
+        $content = file_get_contents( __DIR__ . "/../../views/$view.php");
 
         // Plantilla base para renderizar contenido.
-        require __DIR__ . "../../views/layout.php";
+        require __DIR__ . "/../../views/layout.php";
     }
 
 }

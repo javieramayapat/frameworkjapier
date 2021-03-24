@@ -14,6 +14,6 @@ class HomeController
      */
     public function index()
     {
-        return new Response("index");
+        return new Response("home");
     }
 }
