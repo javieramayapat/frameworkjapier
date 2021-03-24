@@ -21,7 +21,7 @@ class Request
      * 
      * Función encargada de setear la propiedad 
      * del controlador proveniente en el segmento
-     * de la url, de no encontrarlo rediccionará 
+     * de la url, de no encontrarlo redireccionará
      * al home del sistema.
      */
     public function setController()
@@ -36,7 +36,7 @@ class Request
      * 
      * Función encargada de setear el parámetro uasado para 
      * la configuración del método a utilizar de mi controlador,
-     * de no encontrarlos rediccionará a la función index.
+     * de no encontrarlos redireccionará a la función index.
      */
     public function setMethod()
     {
@@ -71,11 +71,13 @@ class Request
         $controller = $this->getController();
         $method = $this->getMethod();
 
+        //Carga del controlador correcto y le pasa el método a ejecutar.
         $response =  call_user_func([
             new $controller,
             $method
         ]);
 
+        //Invoca al método send de Response
         $response->send();
     }
 }

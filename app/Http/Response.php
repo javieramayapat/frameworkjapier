@@ -19,6 +19,9 @@ class Response
         return $this->view;
     }
 
+    /**
+     * Función encargada de renderizar las vistas de nuestro programa.
+     */
     public function send()
     {
         // Obtengo la vista 
