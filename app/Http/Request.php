@@ -4,7 +4,7 @@ namespace App\Http;
 
 class Request
 {
-    protected $segment;
+    protected $segments;
     protected $controller;
     protected $method;
 
@@ -26,9 +26,9 @@ class Request
      */
     public function setController()
     {
-        $this->controller = empty($this->segment[1])
+        $this->controller = empty($this->segments[1])
             ? 'Home'
-            : $this->segment[1];
+            : $this->segments[1];
     }
 
     /**
@@ -40,8 +40,42 @@ class Request
      */
     public function setMethod()
     {
-        $this->method = empty($this->segment[2])
+        $this->method = empty($this->segments[2])
             ? 'index'
-            : $this->segment[2];
+            : $this->segments[2];
+    }
+
+    /**
+     * Función para obtener el path absoluto del controlador.
+    */
+    public function getController()
+    {
+        $controller = ucfirst($this->controller);
+        return "App\Http\Controllers\\{$controller}Controller";
+    }
+
+    /**
+     * Función para obtener el método cargado.
+     */
+    public function getMethod()
+    {
+        return $this->method;
+    }
+
+    /**
+     * Función encargada de disparar un controlador
+     * para servirle una respuesta al usuario.
+     */
+    public function send()
+    {
+        $controller = $this->getController();
+        $method = $this->getMethod();
+
+        $response =  call_user_func([
+            new $controller,
+            $method
+        ]);
+
+        $response->send();
     }
 }
