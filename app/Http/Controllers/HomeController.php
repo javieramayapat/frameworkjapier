@@ -16,4 +16,14 @@ class HomeController
     {
         return new Response("home");
     }
+
+    public function service()
+    {
+        return new Response("service");
+    }
+
+    public function contact()
+    {
+        return new Response("contact");
+    }
 }

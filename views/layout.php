@@ -17,6 +17,20 @@
                 <img src="https://www.flaticon.es/svg/vstatic/svg/4404/4404873.svg?token=exp=1616607173~hmac=284875b079d487da0b694665a546c329" width="30" height="30" class="d-inline-block align-top" alt="">
                 Japier
             </a>
+
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
