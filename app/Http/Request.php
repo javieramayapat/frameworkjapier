@@ -47,7 +47,7 @@ class Request
 
     /**
      * Función para obtener el path absoluto del controlador.
-    */
+     */
     public function getController()
     {
         $controller = ucfirst($this->controller);
@@ -68,6 +68,7 @@ class Request
      */
     public function send()
     {
+        //Obtiene la instancia de la clase del controlador completo.
         $controller = $this->getController();
         $method = $this->getMethod();
 
@@ -78,6 +79,14 @@ class Request
         ]);
 
         //Invoca al método send de Response
-        $response->send();
+        try {
+            if ($response instanceof Response) {
+                $response->send();
+            } else {
+                throw new \Exception("Error Procesing Request");
+            }
+        } catch (\Exception $e) {
+            echo "Details {$e->getMessage()}";
+        }
     }
 }

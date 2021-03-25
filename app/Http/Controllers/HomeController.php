@@ -1,9 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Response;
-
 class HomeController
 {
     /**
@@ -14,16 +11,16 @@ class HomeController
      */
     public function index()
     {
-        return new Response("home");
+        return view ("home");
     }
 
     public function service()
     {
-        return new Response("service");
+        return view("service");
     }
 
     public function contact()
     {
-        return new Response("contact");
+        return view ("contact");
     }
 }

@@ -21,6 +21,7 @@ class Response
 
     /**
      * Función encargada de renderizar las vistas de nuestro programa.
+     * Sistema de rutas.
      */
     public function send()
     {
@@ -28,10 +29,10 @@ class Response
         $view = $this->getView();
 
         // Obtener el contendio que se pintara a en la vista.
-        $content = file_get_contents( __DIR__ . "/../../views/$view.php");
+        $content = file_get_contents(viewPath($view));
 
         // Plantilla base para renderizar contenido.
-        require __DIR__ . "/../../views/layout.php";
+        require viewPath('layout');
     }
 
 }
