@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="https://www.flaticon.es/svg/vstatic/svg/4404/4404873.svg?token=exp=1616607173~hmac=284875b079d487da0b694665a546c329" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="https://www.flaticon.es/svg/vstatic/svg/1244/1244606.svg?token=exp=1616644871~hmac=de45e092ece959df5ebfbd2a47e38e50" width="30" height="30" class="d-inline-block align-top" alt="">
                 Japier
             </a>
 

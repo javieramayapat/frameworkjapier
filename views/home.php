@@ -1,6 +1,6 @@
 <div class="col-12">
     <div class="text-center mb-3">
-        <h1><img src="https://www.flaticon.es/svg/vstatic/svg/4404/4404873.svg?token=exp=1616607173~hmac=284875b079d487da0b694665a546c329" alt="" style="height: 60px;">Bienvenidos a Japier</h1>
+        <h1><img src="https://www.flaticon.es/svg/vstatic/svg/1244/1244606.svg?token=exp=1616644871~hmac=de45e092ece959df5ebfbd2a47e38e50" alt="" style="height: 50px;">Bienvenidos a Japier</h1>
     </div>
     <hr>
 
